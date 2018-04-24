@@ -1,10 +1,6 @@
 version: 0.0
 os: linux
 
-files:
-  - source: /var/lib/jenkins/workspace/github-pull-and-build/target/springboot-helloworld-0.0.1-SNAPSHOT.war
-    destination: /opt/tomcat9/webapps
-
 hooks:
  BeforeInstall:
    - location: scripts/beforecicd.sh
