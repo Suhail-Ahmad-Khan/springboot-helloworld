@@ -6,14 +6,16 @@ pipeline
 	{
     		
     		stage('Clone sources') 
-    		{
-        		git url: 'https://github.com/jfrogdev/project-examples.git', branch: 'master'
-        		echo "Cloned the project from Github"
+    		{	
+    			step
+    				{
+    					git url: 'https://github.com/jfrogdev/project-examples.git', branch: 'master'
+    				}
     		}
         
         	stage ('Compile Stage') 
         	{
-            	steps 
+            	step 
             		{
                 		withMaven(maven : 'Maven') 
                 		{
