@@ -7,7 +7,7 @@ pipeline
     		
     		stage('Clone sources') 
     		{	
-    			step
+    			steps
     				{
     					git url: 'https://github.com/jfrogdev/project-examples.git', branch: 'master'
     				}
@@ -15,7 +15,7 @@ pipeline
         
         	stage ('Compile Stage') 
         	{
-            	step 
+            	steps
             		{
                 		withMaven(maven : 'Maven') 
                 		{
