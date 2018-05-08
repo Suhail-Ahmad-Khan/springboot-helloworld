@@ -13,5 +13,5 @@ sudo su -c "mkdir /home/ubuntu/fundooPay"
 sudo su -c "unzip -o /home/ubuntu/fundooPay.zip -d /home/ubuntu/fundooPay"
 sudo su -c "cd /home/ubuntu/fundooPay/target;
 	    mv springboot-helloworld-0.0.1-SNAPSHOT /home/ubuntu/hello.war;
-	    cp hello.war /opt/tomcat9/webapps/"
+	    cp /home/ubuntu/hello.war /opt/tomcat9/webapps/"
 
