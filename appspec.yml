@@ -1,8 +1,5 @@
 version: 0.0
 os: linux
-files:
-  - source: /target/springboot-helloworld-0.0.1-SNAPSHOT.war
-    destination: /tmp/codedeploy-deployment-staging-area/
 hooks:
  BeforeInstall:
    - location: scripts/beforecicd.sh
