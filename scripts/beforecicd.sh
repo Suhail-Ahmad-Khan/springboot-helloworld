@@ -6,6 +6,7 @@ sudo su -c "service codedeploy-agent start"
 sudo su -c "cd /opt/tomcat9/bin;
 	    ./startup.sh"
 
-aws s3 cp s3://jenkins-war-upload/#18-8891273898490606592.zip fundooPay.zip
+sudo su -c "aws s3 ls s3://jenkins-war-upload"
+#aws s3 cp s3://jenkins-war-upload/#18-8891273898490606592.zip fundooPay.zip
 
 
